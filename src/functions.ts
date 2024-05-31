@@ -3,7 +3,7 @@
 // ----------
 
 /**
- * @description Add two numbers together and returns the result
+ * @desc Add two numbers together and returns the result
  * @param {number} a first value
  * @param {number} b second value
  * @return {number} the result of a + b
@@ -11,7 +11,7 @@
 const addTwoNumbers = (a: number, b: number): number => a + b
 
 /**
- * @description Subtract two numbers and returns the result
+ * @desc Subtract two numbers and returns the result
  * @param {number} a first value
  * @param {number} b second value
  * @returns {number} the result of a - b
@@ -36,7 +36,14 @@ addAllNumbers([1, 2, 3, 4])
 // ---------
 // Return type inference
 // ---------
-function formatGreeting(name: string, greeting: string) {
+
+/**
+ * @desc Formats greeting and returns greeting
+ * @param {string} name
+ * @param {string} greeting
+ * @returns {string} concat of name and greeting
+ */
+function formatGreeting(name: string, greeting: string): string {
   return `${greeting}, ${name}`
 }
 
