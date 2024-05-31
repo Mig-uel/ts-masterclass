@@ -43,7 +43,7 @@ addAllNumbers([1, 2, 3, 4])
  * @param {string} greeting
  * @returns {string} concat of name and greeting
  */
-function formatGreeting(name: string, greeting: string): string {
+function formatGreeting(name: string, greeting: string) {
   return `${greeting}, ${name}`
 }
 
