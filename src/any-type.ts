@@ -1,4 +1,5 @@
 // -------- ANY TYPE ------- //
+
 let age: any // can be any type
 age = 30
 age = false
@@ -10,6 +11,7 @@ title = { hello: 'world' }
 // any type inference
 
 // --- ANY TYPE IN ARRAY -- //
+
 let things: any[] = ['hello', true, 30, null]
 things.push({ id: 123 })
 
