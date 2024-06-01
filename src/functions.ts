@@ -1,6 +1,4 @@
-// ----------
-// Functions
-// ----------
+// ------- FUNCTIONS ------ //
 
 /**
  * @desc Add two numbers together and returns the result
@@ -33,9 +31,7 @@ const addAllNumbers = (items: number[]): void => {
 
 addAllNumbers([1, 2, 3, 4])
 
-// ---------
-// Return type inference
-// ---------
+// ------- RETURN TYPE INFERENCE ------ //
 
 /**
  * @desc Formats greeting and returns greeting
