@@ -26,5 +26,7 @@ function swapIdType(id: Id): Id {
   // parseInt(id) --> not allowed
 
   return id
+  // return id.toFixed() // error - method not common to both number and string
+  // return id.length // error - method not common to both number and string
 }
 swapIdType(5)
