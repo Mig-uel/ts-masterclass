@@ -7,6 +7,6 @@
     "typescript": "^5.4.5"
   },
   "scripts": {
-    "tsc": "tsc -watch"
+    "tsc": "tsc --watch"
   }
 }
