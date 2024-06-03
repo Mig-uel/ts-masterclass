@@ -3,11 +3,18 @@
 
 type Base = 'classic' | 'thick' | 'thin' | 'garlic'
 
-class Pizza {
+// ------ INHERITANCE ----- //
+class MenuItem {
+  constructor(private title: string, private price: number) {}
+}
+
+class Pizza extends MenuItem {
   private base: Base = 'classic'
   private toppings: string[] = []
 
-  constructor(private title: string, private price: number) {}
+  constructor(title: string, price: number) {
+    super(title, price)
+  }
 
   addToppings(topping: string): void {
     this.toppings.push(topping)
