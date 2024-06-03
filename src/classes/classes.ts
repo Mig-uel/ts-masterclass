@@ -33,3 +33,5 @@ pizza.removeTopping('mushrooms')
 
 //pizza.selectBase('crispy') // error - param does not adhere to the type Base
 pizza.selectBase('garlic')
+
+console.log(pizza)
