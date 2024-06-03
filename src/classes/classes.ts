@@ -30,3 +30,21 @@ pizza.removeTopping('mushrooms')
 pizza.selectBase('garlic')
 
 console.log(pizza)
+
+// --- CLASSES AS TYPES --- //
+const pizzaOne: Pizza = new Pizza('mario special', 15)
+const pizzaTwo = new Pizza('luigi special', 10) // type auto-inferred
+
+/**
+ * @desc A function to add mushrooms to pizzas
+ * @param {Pizza[]} pizza
+ * @returns {void}
+ */
+function addMushroomsToPizzas(pizzas: Pizza[]): void {
+  for (const p of pizzas) {
+    p.addToppings('mushrooms')
+  }
+}
+
+addMushroomsToPizzas([pizzaOne, pizzaTwo])
+console.log(pizzaOne, pizzaOne)
