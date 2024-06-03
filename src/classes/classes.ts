@@ -20,6 +20,9 @@ class Pizza {
   removeTopping(topping: string): void {
     this.toppings = this.toppings.filter((t) => t !== topping)
   }
+  selectBase(base: Base): void {
+    this.base = base
+  }
 }
 
 const pizza = new Pizza('mario special', 15)
@@ -27,3 +30,6 @@ const pizza = new Pizza('mario special', 15)
 pizza.addToppings('mushrooms')
 pizza.addToppings('four cheese blend')
 pizza.removeTopping('mushrooms')
+
+//pizza.selectBase('crispy') // error - param does not adhere to the type Base
+pizza.selectBase('garlic')
