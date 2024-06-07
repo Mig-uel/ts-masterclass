@@ -8,5 +8,8 @@
   },
   "scripts": {
     "tsc": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2"
   }
 }
