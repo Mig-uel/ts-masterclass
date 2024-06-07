@@ -1,5 +1,5 @@
 // -- CSV WRITER PROJECT -- //
-
+import { appendFileSync } from 'fs'
 import { Payment } from './interfaces/payment'
 
 type PaymentColumns = ('id' | 'amount' | 'to' | 'notes')[]
@@ -10,6 +10,13 @@ class CSVWriter {
   }
 
   private csv: string
+
+  save(filename: string): void {
+    appendFileSync(`./data/${filename}.csv`, this.csv)
+    this.csv = '\n'
+
+    console.log('FILE SAVED TO ', filename)
+  }
 
   addRows(val: Payment[]): void {
     let rows = val.map((v) => this.formatRow(v))
@@ -29,3 +36,5 @@ writer.addRows([
   { id: 1, amount: 50, to: 'yoshi', notes: 'for design work' },
   { id: 2, amount: 100, to: 'luigi', notes: 'for ghostbusting' },
 ])
+
+writer.save('payments')
