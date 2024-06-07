@@ -14,10 +14,11 @@ function logAndReturnBoolean(val: boolean): boolean {
   return val
 }
 
-// generic function
+// generic function - example 1
 function logAndReturnValue<T>(val: T): T {
   console.log(val)
   return val
 } // T - stands for type
 
 const resultOne = logAndReturnValue<string>('mario')
+const resultTwo = logAndReturnValue<number>(10)
