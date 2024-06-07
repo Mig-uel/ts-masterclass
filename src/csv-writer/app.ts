@@ -1,6 +1,5 @@
 // -- CSV WRITER PROJECT -- //
 import { appendFileSync } from 'fs'
-import { Payment } from './interfaces/payment'
 
 export class CSVWriter<T> {
   constructor(private columns: (keyof T)[]) {
