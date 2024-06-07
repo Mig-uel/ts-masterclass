@@ -15,7 +15,7 @@ function logAndReturnBoolean(val: boolean): boolean {
 }
 
 // generic function
-function logAndReturnValue(val: any): any {
+function logAndReturnValue<T>(val: T): any {
   console.log(val)
   return val
-}
+} // T - stands for type
