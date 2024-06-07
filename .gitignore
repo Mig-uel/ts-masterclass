@@ -12,6 +12,7 @@ build/
 # Ignore logs and temporary files
 *.log
 *.tmp
+.parcel-cache
 
 # Ignore environment-specific files
 .env
