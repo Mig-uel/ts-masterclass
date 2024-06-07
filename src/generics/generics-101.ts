@@ -15,7 +15,9 @@ function logAndReturnBoolean(val: boolean): boolean {
 }
 
 // generic function
-function logAndReturnValue<T>(val: T): any {
+function logAndReturnValue<T>(val: T): T {
   console.log(val)
   return val
 } // T - stands for type
+
+const resultOne = logAndReturnValue<string>('mario')
