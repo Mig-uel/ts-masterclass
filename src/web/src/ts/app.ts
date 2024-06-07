@@ -1,3 +1,4 @@
+import { Pizza, PizzaProps } from './models/pizza.model'
 
 const createPizzaTemplate = (pizza: PizzaProps): string => {
   return `
