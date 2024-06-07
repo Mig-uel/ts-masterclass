@@ -22,3 +22,25 @@ function logAndReturnValue<T>(val: T): T {
 
 const resultOne = logAndReturnValue<string>('mario')
 const resultTwo = logAndReturnValue<number>(10)
+
+// generic function - example 2
+function getRandomArrayValue<T>(values: T[]): T {
+  const randIndex = Math.floor(Math.random() * values.length)
+
+  return values[randIndex]
+}
+
+interface User {
+  name: string
+  score: number
+}
+
+const users: User[] = [
+  { name: 'mario', score: 100 },
+  { name: 'peach', score: 150 },
+  { name: 'wario', score: 75 },
+  { name: 'yoshi', score: 90 },
+]
+
+const randomUser = getRandomArrayValue<User>(users)
+console.log(randomUser)
