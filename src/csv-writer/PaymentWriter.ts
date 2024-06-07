@@ -1,9 +1,10 @@
 import { CSVWriter } from './app'
 
-const writer = new CSVWriter(['id', 'amount', 'to', 'notes'])
-writer.addRows([
+const paymentWriter = new CSVWriter(['id', 'amount', 'to', 'notes'])
+
+paymentWriter.addRows([
   { id: 1, amount: 50, to: 'yoshi', notes: 'for design work' },
   { id: 2, amount: 100, to: 'luigi', notes: 'for ghostbusting' },
 ])
 
-writer.save('payments')
+paymentWriter.save('payments')
