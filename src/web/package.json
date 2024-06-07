@@ -2,5 +2,9 @@
   "name": "web",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
 }
