@@ -52,6 +52,8 @@ class Pizza extends MenuItem {
 }
 
 const pizza = new Pizza('Mario Special', 15)
+pizza.addTopping('mushrooms')
+pizza.addTopping('peppers')
 
 function printFormatted(val: HasFormatter): void {
   console.log(val.format())
