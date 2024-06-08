@@ -1,13 +1,21 @@
-interface PostCard {
+interface Post {
+  userId: number
+  id: number
   title: string
-  author: string
+  body: string
 }
 
-const PostCard = ({ title, author }: PostCard) => {
+interface PostCard {
+  post: Post
+}
+
+const PostCard = ({ post }: PostCard) => {
   return (
     <div className='card'>
-      <h2>{title}</h2>
-      <p>Written by {author}</p>
+      <h2>
+        <b>{post.title}</b>
+      </h2>
+      <p>{post.body}</p>
     </div>
   )
 }
