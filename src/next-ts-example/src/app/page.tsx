@@ -1,12 +1,5 @@
 import PostCard from '@/components/post-card.component'
 
-interface Post {
-  userId: number
-  id: number
-  title: string
-  body: string
-}
-
 const fetchPosts = async (): Promise<Post[]> => {
   const res = await fetch('https://jsonplaceholder.typicode.com/users/1/posts')
 
