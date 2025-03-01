@@ -15,3 +15,7 @@ function createCourseGoal(title: string, desc: string, date: Date): CourseGoal {
 
   return courseGoal as CourseGoal
 }
+
+/** Readonly Utility */
+const names: Readonly<string[]> = ['Max', 'Anna']
+names.push('Missy')
