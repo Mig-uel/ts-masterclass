@@ -7,8 +7,7 @@
     "typescript": "^5.4.5"
   },
   "scripts": {
-    "tsc": "tsc --watch",
-    "run": "npx tsx"
+    "tsc": "tsc --watch"
   },
   "devDependencies": {
     "@types/node": "^20.14.2"
