@@ -9,3 +9,21 @@ type ObjectB = { age: 30 }
 // TypeScript can assume the types of the values passed or you can define them
 // const mergedObject = merge<ObjectA, ObjectB>({ name: 'Max' }, { age: 30 })
 const mergedObject = merge({ name: 'Max' }, { age: 30 })
+
+// ***************************************************************
+
+interface HasLength {
+  length: number
+}
+
+function countAndDescribe<T extends HasLength>(element: T): [T, string] {
+  let descriptionText = 'Got no value'
+
+  if (element.length) {
+    descriptionText = `Got ${element.length} elements`
+  }
+
+  return [element, descriptionText]
+}
+
+console.log(countAndDescribe('Hello'))
